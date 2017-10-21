@@ -1,18 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-
-    <script>
-        var db = openDatabase('Global_Water', '1.0', 'SQL', 3 * 1024 * 1024);
-        db.transaction(function (tx) {
-            tx.executeSql('CREATE TABLE IF NOT EXISTS "Location"("Longitude&Latitude"  UNIQUE , "L_Name"  PRIMARY KEY  NOT NULL , "Province/State")');
-        });
-
-    </script>
+    <link type="text/css" rel="stylesheet" href="site.css" media="screen" />
+    <title>Global Water</title>
 </head>
 
 <body>
+    <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+    <form action="/solar_cell_table.php">
+        <p>Please Enter the information about solar cell:</p>
+        Solar Cell Number:
+        <input type="text" name="Solar Cell Number" value="">
+        <br> Number of Cells:
+        <input type="text" name="Number of Cells" value="">
+        <br> Well Number:
+        <input type="text" name="Well Number" value="">
+        <br> Energy Generation:
+        <input type="text" name="Energy Generation" value="">
+        <br> Energy Usage:
+        <input type="text" name="Energy Usage" value="">
+        <br> Water Production:
+        <input type="text" name="Water Production" value="">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <form action="/location_table.php">
+        <p>Please Enter the information about location:</p>
+        Location Name:
+        <input type="text" name="Location Name" value="">
+        <br> Province/State:
+        <input type="text" name="Province/State" value="">
+        <br> Longitude:
+        <input type="text" name="Longitude" value="">
+        <br> Latitude:
+        <input type="text" name="Latitude" value="">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <form action="/well_table.php">
+        <p>Please Enter the information about well:</p>
+        Well Number:
+        <input type="text" name="Well Number" value="">
+        <br> Location:
+        <input type="text" name="Location" value="">
+        <br> Depth:
+        <input type="text" name="Depth" value="">
+        <br> Size:
+        <input type="text" name="Size" value="">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 
 </html>
