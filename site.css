@@ -75,3 +75,27 @@ input[type="text"] {
 input[type="submit"] {
     font-size: 16px;
 }
+
+input[type="button"] {
+    font-size: 16px;
+}
+
+div.table {
+    margin: 100px;
+}
+
+div.table h1 {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    width: 80%;
+    padding: 50px;
+	border-width: 1px;
+	border-collapse: collapse;
+}
+
+table td {
+    text-align: center;
+}
