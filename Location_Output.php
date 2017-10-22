@@ -23,5 +23,5 @@
 	$resultL_Name = mysqli::query($queryL_Name);
 	$resultState = mysqli::query($queryState);
 
-
+	mysqli_close($link);
  ?>
