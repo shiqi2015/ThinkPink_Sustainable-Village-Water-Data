@@ -1,3 +1,77 @@
+body {
+    background-color: white;
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+      "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+      "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+      "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+    margin: 0px;
+}
+
+div.header_img {
+    background-color: black;
+    position: relative;
+}
+
+div.header_img div.header_title {
+    font-size: 32px;
+    color: black;
+    text-shadow: 2px 2px 2px grey;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+img.header:hover {
+    opacity: 0.8;
+    filter :alpha(opacity=80);
+}
+
+div.input_area {
+    font-size: 16px;
+    padding: 20px 100px;
+}
+
+p.prompt {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div.footer_img {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+div.footer_img div.footer_info {
+    font-size: 16px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding: 300px 0px 0px;
+}
+
+.footer_info ul {
+    display: inline;
+    list-style: none;
+}
+
 input[type="text"] {
     width: 50%;
+}
+
+input[type="submit"] {
+    font-size: 16px;
 }
